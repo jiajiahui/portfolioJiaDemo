@@ -1,0 +1,142 @@
+/* Styles myportfolio aboutme*/
+/* Begin with all the all page need*/
+body {
+    font-family: 'Space Mono', monospace;
+   
+}
+
+title {
+	color: red;
+}
+header {
+	padding: 10px 16px;
+    overflow: hidden;
+}
+
+.HeaderBox {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-top: 10px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: green;
+}
+.main-menu li{
+	display: inline;
+	margin-left:30px; 
+}
+.main-menu li a:hover {
+	background-color: #FFFF41;
+}
+.myname h1 a{
+	font-size: 20px;
+	text-align: right;
+    color: #585858;
+    list-style-type: none;
+    text-decoration: none;
+}
+.main-menu {
+	font-size: 10px;
+	text-align: right;
+    list-style-type: none;
+
+}   
+
+.main-menu a {
+    text-decoration: none;
+    color: #585858;
+}
+
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: pink;
+   color: white;
+}
+
+
+.Copyright {
+    width: 100%;
+    margin-top: 0em;
+    text-align: center;
+}
+
+.Copyright p {
+    color: #707070;
+    font-size: .1em;
+}
+
+.Social-icons {
+	font-size: 15px;
+    margin-top: 0em;
+    width: 100%; 
+    color: #585858;
+    text-align: center;
+}
+
+.Social-icons a {
+    color: #585858;
+    text-decoration: none;
+}
+.Social-icons a:hover {
+	background-color: #FFFF41;
+}
+/*  with all the all page need*/
+
+
+
+h2.intro{
+    margin-left: 20px;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 23px;
+    color: #585858;
+}
+
+p.intro{
+    margin-left: 12px;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    font-size: 9px;
+    font-weight: 200;
+    padding: 1em;
+    color: #585858;
+    width: 300px;
+}
+
+.flexBox{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 150px;
+    background-color: red;
+   /*padding:20;*/
+}
+
+img {
+    width: 100%;
+    max-width: 250px;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+
+  body {
+    background-color: blue;
+  }
+
+  .HeaderBox {
+    justify-content: flex-start;
+}
+
+
+

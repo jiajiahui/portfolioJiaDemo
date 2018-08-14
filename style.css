@@ -1,0 +1,136 @@
+/* Styles myportfolio homrpage */
+
+body {
+    font-family: 'Space Mono', monospace;
+   
+}
+
+title {
+	color: red;
+}
+header {
+	width: 100%;
+	position: fixed;
+	padding:0px 20px;
+}
+
+.FlexBox {
+    width: 1000px;
+    padding: 0px 50px;
+    margin: 0px auto;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-menu li{
+	display: inline;
+	margin-left:30px; 
+}
+.main-menu li a:hover {
+	background-color: #FFFF41;
+}
+.myname {
+	font-size: 10px;
+	text-align: right;
+    color: #585858;
+    list-style-type: none;
+}
+.main-menu {
+	font-size: 10px;
+	text-align: right;
+    list-style-type: none;
+}   
+
+.main-menu a {
+    text-decoration: none;
+    color: #585858;
+}
+
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+/*    padding: 10px 5px;*/
+    text-align: center;
+}
+
+.Copyright {
+    width: 100%;
+    margin-top: 0em;
+}
+
+.Copyright p {
+    color: #707070;
+    font-size: .1em;
+}
+
+.Social-icons {
+	font-size: 15px;
+    margin-top: 20em;
+    width: 100%; 
+    color: #585858;
+}
+
+.Social-icons a {
+    color: #585858;
+    text-decoration: none;
+}
+.Social-icons a:hover {
+	background-color: #FFFF41;
+}
+
+/*only for this page*/
+
+.Front-Name {
+	font-size: 15px;
+	width: 600px;
+	height: 30px;
+    padding-top: 100px;
+    margin: 0px auto;
+	display: flex;
+    flex-wrap: wrap;
+    color: #707070;
+    line-height: 40px;
+}
+/*.Front-Bio {
+	font-size: 7px;
+	width: 300px;
+	height: 30px;
+    padding-top: 100px;
+    margin: 0px auto;
+	display: flex;
+    flex-wrap: wrap;
+    color: #707070;
+} 
+.Front-Bio p {
+	line-height: 20px;
+}*/
+.All-projects {
+	padding-top: 200px;
+	text-align: center;
+}
+.All-projects  p {
+	font-size: 7px;
+	color: #585858; 
+}
+.Projects-bars {
+	font-size: 25px;
+    line-height: 35px;
+    
+    color: #707070;
+    list-style-type: none;
+    margin-top: 5px;
+    padding-left: 0;
+}
+.Projects-bars a {
+	text-decoration: none;
+    color: #707070;
+}
+.Projects-bars li a:hover {
+	background-color: #FFFF41;
+}
+
+
+
+

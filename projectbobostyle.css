@@ -1,0 +1,156 @@
+/* Styles myportfolio projectbobo*/
+
+                                          /* Begin with all the all page need*/
+body {
+    font-family: 'Space Mono', monospace;
+    padding: 20px;
+    background-color: #f1f1f1; 
+}
+
+title {
+    color: red;
+}
+header {
+    padding: 10px 16px;
+    overflow: hidden;
+}
+
+.HeaderBox {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: green;
+}
+.main-menu li{
+    display: inline;
+    margin-left:30px; 
+}
+.main-menu li a:hover {
+    background-color: #FFFF41;
+}
+.myname h1 a{
+    font-size: 20px;
+    text-align: right;
+    color: #585858;
+    list-style-type: none;
+    text-decoration: none;
+}
+.main-menu {
+    font-size: 10px;
+    text-align: right;
+    list-style-type: none;
+
+}   
+
+.main-menu a {
+    text-decoration: none;
+    color: #585858;
+}
+
+
+footer {
+   min-height: calc(10vh - 70px);
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: pink;
+}
+.NotSticky {
+    height: 50px;
+}
+
+.Copyright {
+    width: 100%;
+    margin-top: 0em;
+    text-align: center;
+}
+
+.Copyright p {
+    color: #707070;
+    font-size: .1em;
+}
+
+.Social-icons {
+    font-size: 15px;
+    margin-top: 0em;
+    width: 100%; 
+    color: #585858;
+    text-align: center;
+}
+
+.Social-icons a {
+    color: #585858;
+    text-decoration: none;
+}
+.Social-icons a:hover {
+    background-color: #FFFF41;
+}
+                                     /* End with all the all page need*/
+
+.flex-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto;
+  background-color: DodgerBlue;
+}
+
+.flex-container .P-Intro {
+  background-color: red;
+  width: 280px;
+  margin: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.flex-container .P-Intro h2{
+  font-size: 30px;
+  color: #585858;
+  line-height: 20px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+.flex-container .P-Intro p{
+  font-size: 14px;
+  color: #707070;
+  line-height: 20px;
+  margin: 0 auto;
+
+}
+.flex-container .P-Image {
+  background-color: green;
+  width: 800px;
+  margin: 10px;
+}
+.flex-container .P-Image img {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-container .P-Intro {
+        width: 30%;
+    }
+    .flex-container .P-Image {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .flex-container .P-Intro {
+        width: 100%;
+    }
+    .flex-container .P-Image {
+        width: 100%;
+    }
+}
+
+
