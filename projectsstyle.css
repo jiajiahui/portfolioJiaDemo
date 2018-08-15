@@ -2,13 +2,9 @@
 /* Begin with all the all page need*/
 body {
     font-family: 'Space Mono', monospace;
-    padding: 20px;
-    background-color: #f1f1f1;  
+    padding: 20px; 
 }
 
-title {
-    color: red;
-}
 header {
     padding: 10px 16px;
     overflow: hidden;
@@ -21,14 +17,25 @@ header {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
-    background-color: green;
+    background-color: white;
 }
+
 .main-menu li{
     display: inline;
     margin-left:30px; 
 }
+.main-menu li a {
+    text-decoration: none;
+    color: #585858;
+    float: right;
+    display: block;
+    text-align: center;
+ /*   padding: 14px 16px;*/
+    font-size: 13px;
+}
+
 .main-menu li a:hover {
     background-color: #FFFF41;
 }
@@ -38,26 +45,25 @@ header {
     color: #585858;
     list-style-type: none;
     text-decoration: none;
+    background-color: #FFFF41;
 }
 .main-menu {
     font-size: 10px;
     text-align: right;
     list-style-type: none;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }   
-
-.main-menu a {
-    text-decoration: none;
-    color: #585858;
-}
 
 
 footer {
    min-height: calc(10vh - 70px);
    left: 0;
    bottom: 0;
+   margin-bottom: 10px;
    width: 100%;
-   background-color: pink;
+   background-color: white;
 }
 .NotSticky {
     height: 50px;
@@ -74,46 +80,45 @@ footer {
     font-size: .1em;
 }
 
-.Social-icons {
-    font-size: 15px;
+.Social-icons p {
+    font-size: 13px;
     margin-top: 0em;
     width: 100%; 
     color: #585858;
     text-align: center;
 }
 
-.Social-icons a {
+.Social-icons p em a {
     color: #585858;
     text-decoration: none;
 }
-.Social-icons a:hover {
+.Social-icons p em a:hover {
     background-color: #FFFF41;
 }
 /* End with all the all page need*/
 
-
-
 /* Begin with the projects */
 .main {
-    max-width: 1000px;
+    max-width: 1100px;
     width: 100%;
     margin: auto;
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
+    margin-bottom: 40px;
 }
 
 img {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
 }
 
 .content {
-    max-width: 250px;
+    max-width: 300px;
     background-color: white;
-    padding: 25px 10px;
+    padding: 25px 20px;
 }
 
 .text h3 {
@@ -123,12 +128,15 @@ img {
     font-weight: 200;
     margin: 10px 0;
 }
-
-.text p {
+.text p{
     font-size: 10px;
     text-align: left;
     color: #707070;
     margin: 0 0;
+}
+.text a{
+    text-decoration: none;
+    color: #707070;  
 }
 
 .text em{
@@ -146,6 +154,14 @@ img {
 @media screen and (max-width: 600px) {
     .content {
         width: 100%;
+    }
+    .main-menu {
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .main-menu li{
+         margin-left: 0; 
     }
 }
 

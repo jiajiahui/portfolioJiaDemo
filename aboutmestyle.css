@@ -2,14 +2,11 @@
 /* Begin with all the all page need*/
 body {
     font-family: 'Space Mono', monospace;
-   
+    padding: 20px; 
 }
 
-title {
-	color: red;
-}
 header {
-	padding: 10px 16px;
+    padding: 10px 16px;
     overflow: hidden;
 }
 
@@ -18,48 +15,60 @@ header {
     max-width: 1200px;
     margin: 0px auto;
     margin-top: 10px;
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    background-color: green;
+    background-color: white;
 }
+
 .main-menu li{
-	display: inline;
-	margin-left:30px; 
+    display: inline;
+    margin-left:30px; 
 }
+.main-menu li a {
+    text-decoration: none;
+    color: #585858;
+    float: right;
+    display: block;
+    text-align: center;
+ /*   padding: 14px 16px;*/
+    font-size: 13px;
+}
+
 .main-menu li a:hover {
-	background-color: #FFFF41;
+    background-color: #FFFF41;
 }
 .myname h1 a{
-	font-size: 20px;
-	text-align: right;
+    font-size: 20px;
+    text-align: right;
     color: #585858;
     list-style-type: none;
     text-decoration: none;
+    background-color: #FFFF41;
 }
 .main-menu {
-	font-size: 10px;
-	text-align: right;
+    font-size: 10px;
+    text-align: right;
     list-style-type: none;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }   
-
-.main-menu a {
-    text-decoration: none;
-    color: #585858;
-}
 
 
 footer {
-   position: fixed;
+   min-height: calc(10vh - 70px);
    left: 0;
    bottom: 0;
+   margin-bottom: 10px;
+   margin-top: 200px;
    width: 100%;
-   background-color: pink;
-   color: white;
+   background-color: white;
 }
-
+.NotSticky {
+    height: 50px;
+}
 
 .Copyright {
     width: 100%;
@@ -72,20 +81,20 @@ footer {
     font-size: .1em;
 }
 
-.Social-icons {
-	font-size: 15px;
+.Social-icons p {
+    font-size: 13px;
     margin-top: 0em;
     width: 100%; 
     color: #585858;
     text-align: center;
 }
 
-.Social-icons a {
+.Social-icons p em a {
     color: #585858;
     text-decoration: none;
 }
-.Social-icons a:hover {
-	background-color: #FFFF41;
+.Social-icons p em a:hover {
+    background-color: #FFFF41;
 }
 /*  with all the all page need*/
 
@@ -104,7 +113,7 @@ p.intro{
     margin-top: 5px;
     display: block;
     width: 100%;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 200;
     padding: 1em;
     color: #585858;
@@ -118,7 +127,7 @@ p.intro{
     justify-content: center;
     margin: auto;
     margin-top: 150px;
-    background-color: red;
+    background-color: white;
    /*padding:20;*/
 }
 
@@ -129,14 +138,18 @@ img {
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
-
-  body {
-    background-color: blue;
-  }
-
   .HeaderBox {
     justify-content: flex-start;
 }
 
-
+@media screen and (max-width: 600px) {
+    .main-menu {
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .main-menu li{
+         margin-left: 0; 
+    }
+}
 
